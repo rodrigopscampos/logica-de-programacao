@@ -26,6 +26,8 @@ namespace LogicaDeProgramacao
                     Console.WriteLine("Opcao inválida");
                 }
 
+                Console.Clear();
+
                 explicacoes[opcaoEscolhida].Explicar();
 
                 Console.WriteLine("-----------------------------");
