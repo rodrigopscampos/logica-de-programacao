@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1_Explicacoes\6_OperadorWhile.cs" />
+    <Compile Include="1_Explicacoes\7_OpeardorDo.cs" />
     <Compile Include="1_Explicacoes\IExplicacao.cs" />
     <Compile Include="1_Explicacoes\2_LogicaBooleanaEOperadoresAritmeticos.cs" />
     <Compile Include="1_Explicacoes\3_OperadorIfElse.cs" />
