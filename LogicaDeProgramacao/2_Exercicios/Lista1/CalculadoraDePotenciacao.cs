@@ -1,6 +1,8 @@
-﻿namespace LogicaDeProgramacao._2_Exercicios
+﻿using System;
+
+namespace LogicaDeProgramacao._2_Exercicios
 {
-    public class Ex1_CalculadoraDePotenciacao : IExercicio
+    public class CalculadoraDePotenciacao : IExercicio
     {
         public bool VerificarResposta()
         {
@@ -11,8 +13,8 @@
 
         public int Rodar(int @base, int potencia)
         {
-            //Implemente a solução aqui
-            return 0;
+            throw new NotImplementedException();
         }
     }
+
 }
