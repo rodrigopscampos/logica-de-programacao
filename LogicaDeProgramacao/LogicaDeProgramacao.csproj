@@ -54,9 +54,12 @@
     <Compile Include="2_Exercicios\Lista1\CalculadoraDeSalarioLiquido.cs" />
     <Compile Include="2_Exercicios\Lista1\CalculadoraDeSomaDe3Numeros.cs" />
     <Compile Include="2_Exercicios\IExercicio.cs" />
+    <Compile Include="2_Exercicios\Lista1\EncontrarOMaiorNumero.cs" />
     <Compile Include="2_Exercicios\Lista1\IdentificadorDeIdade.cs" />
     <Compile Include="2_Exercicios\Lista2\CaixaEletronico.cs" />
+    <Compile Include="2_Exercicios\Lista2\CalculadoraDeIdadeEmDias.cs" />
     <Compile Include="2_Exercicios\Lista2\CalculadoraDeMediaSimples.cs" />
+    <Compile Include="2_Exercicios\Lista2\ItencaoDeVotosDeUmaPesquisaEleitoral.cs" />
     <Compile Include="2_Exercicios\Lista2\OrdenacaoCrescente.cs" />
     <Compile Include="2_Exercicios\Lista2\ValidarSeONumeroEPrimo.cs" />
     <Compile Include="2_Exercicios\Validar.cs" />

@@ -5,6 +5,8 @@ namespace LogicaDeProgramacao._2_Exercicios.Lista1
     public class IdentificadorDeIdade : IExercicio
     {
         /*
+            Data a idade de uma pessoa, deve retornar qual a faixa etária de acordo com a tabela abaixo:
+
             * Infantil = até 10 anos
             * Infanto = 11 a 15 anos
             * Juvenil = 16 a 18 anos
