@@ -41,12 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1_Explicacoes\2_Array.cs" />
     <Compile Include="1_Explicacoes\6_OperadorWhile.cs" />
     <Compile Include="1_Explicacoes\7_OpeardorDo.cs" />
     <Compile Include="1_Explicacoes\IExplicacao.cs" />
     <Compile Include="1_Explicacoes\2_LogicaBooleanaEOperadoresAritmeticos.cs" />
     <Compile Include="1_Explicacoes\3_OperadorIfElse.cs" />
-    <Compile Include="1_Explicacoes\1_Variaveis.cs" />
+    <Compile Include="1_Explicacoes\1_VariaveisDoTipoValor.cs" />
     <Compile Include="1_Explicacoes\4_OperadorSwitch.cs" />
     <Compile Include="1_Explicacoes\5_OperadorFor.cs" />
     <Compile Include="2_Exercicios\Lista1\CalculadoraDeFatorial.cs" />

@@ -2,7 +2,7 @@
 
 namespace LogicaDeProgramacao.Explicacoes
 {
-    public class Variaveis : IExplicacao
+    public class VariaveisDoTipoValor : IExplicacao
     {
         public void Explicar()
         {
@@ -36,10 +36,6 @@ namespace LogicaDeProgramacao.Explicacoes
                     float d = 1.1;
                     float e = 0.1;
                     float f = d + e; // f será igual a 1.2.
-
-                    string g = 'Olá';
-                    string h = ' Mundo!';
-                    string i = g + h; // i será igual a 'Olá Mundo!'.
 
                     Podemos utilizar uma série de operadores para interagir com as variáveis como > >= < <= != + - * /
                 ");
