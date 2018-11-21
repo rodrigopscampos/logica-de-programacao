@@ -1,4 +1,4 @@
-﻿namespace LogicaDeProgramacao._2_Exercicios
+﻿namespace LogicaDeProgramacao
 {
     public interface IExercicio
     {

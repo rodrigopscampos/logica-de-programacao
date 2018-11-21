@@ -1,6 +1,4 @@
-﻿using LogicaDeProgramacao._2_Exercicios;
-using LogicaDeProgramacao.Explicacoes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -11,14 +9,14 @@ namespace LogicaDeProgramacao
     {
         static void Main(string[] args)
         {
-            var explicacoes = PegarExplicacoes().ToArray();
+            var exercicios = PegarExercicios().ToArray();
 
             while (true)
             {
                 Console.Clear();
 
-                var numeroDeOpcoes = ApresentarExplicacoes(explicacoes);
-                Console.WriteLine("Escolha uma explicação:");
+                var numeroDeOpcoes = ApresentarExercicios(exercicios);
+                Console.WriteLine("Escolha um exercício:");
 
                 int opcaoEscolhida;
                 while (!int.TryParse(Console.ReadLine(), out opcaoEscolhida) || opcaoEscolhida < 0 || opcaoEscolhida >= numeroDeOpcoes)
@@ -28,7 +26,7 @@ namespace LogicaDeProgramacao
 
                 Console.Clear();
 
-                explicacoes[opcaoEscolhida].Explicar();
+                exercicios[opcaoEscolhida].VerificarResposta();
 
                 Console.WriteLine("-----------------------------");
                 Console.WriteLine("Digite 'exit' para sair ou Enter para continuar");
@@ -38,17 +36,17 @@ namespace LogicaDeProgramacao
             }
         }
 
-        static int ApresentarExplicacoes(IEnumerable<IExplicacao> explicacoes)
+        static int ApresentarExercicios(IEnumerable<IExercicio> exercicios)
         {
             var i = 0;
-            foreach (var e in explicacoes)
-            {
-                Console.WriteLine($"{i} - {e.GetType().Name}");
 
+            foreach (var e in exercicios)
+            {
+                Console.WriteLine(string.Format("{0, 3} - {1}", i, e.GetType().FullName));
                 i++;
             }
 
-            return explicacoes.Count();
+            return exercicios.Count();
         }
 
         static IEnumerable<IExercicio> PegarExercicios()
@@ -57,20 +55,10 @@ namespace LogicaDeProgramacao
             var tipos = assembly.GetTypes()
                     .Where(t => t.IsClass)
                     .Where(t => typeof(IExercicio).IsAssignableFrom(t))
+                    .OrderBy(t => t.FullName)
                     .ToArray();
 
             return tipos.Select(t => (IExercicio)Activator.CreateInstance(t)).ToArray();
-        }
-
-        static IEnumerable<IExplicacao> PegarExplicacoes()
-        {
-            var assembly = Assembly.GetExecutingAssembly();
-            var tipos = assembly.GetTypes()
-                    .Where(t => t.IsClass)
-                    .Where(t => typeof(IExplicacao).IsAssignableFrom(t))
-                    .ToArray();
-
-            return tipos.Select(t => (IExplicacao)Activator.CreateInstance(t)).ToArray();
         }
     }
 }

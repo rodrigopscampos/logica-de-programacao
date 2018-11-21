@@ -1,6 +1,6 @@
 using System;
 
-namespace LogicaDeProgramacao._2_Exercicios
+namespace LogicaDeProgramacao.Lista1
 {
 
     public class CalculadoraDeSomaDe3Numeros : IExercicio

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LogicaDeProgramacao._2_Exercicios.Lista2
+namespace LogicaDeProgramacao.Lista2
 {
     public class CalculadoraDeIdadeEmDias : IExercicio
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LogicaDeProgramacao._2_Exercicios.Lista1
+namespace LogicaDeProgramacao.Lista1
 {
     public class EncontrarOMaiorNumero : IExercicio
     {

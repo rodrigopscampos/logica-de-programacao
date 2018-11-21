@@ -1,6 +1,6 @@
 using System;
 
-namespace LogicaDeProgramacao._2_Exercicios
+namespace LogicaDeProgramacao.Lista2
 {
 
     public class ValidarSeONumeroEPrimo : IExercicio
