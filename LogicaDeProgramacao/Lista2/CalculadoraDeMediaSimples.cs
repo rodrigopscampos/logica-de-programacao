@@ -7,8 +7,8 @@ namespace LogicaDeProgramacao.Lista2
         public bool VerificarResposta()
         {
             return
-                  Validar.SaoIguais(2, Rodar(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2))
-               && Validar.SaoIguais(6, Rodar(10, 3, 0, -1))
+                  Validar.SaoIguais(2, () => Rodar(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2))
+               && Validar.SaoIguais(6, () => Rodar(10, 3, 0, -1))
                ;
         }
 

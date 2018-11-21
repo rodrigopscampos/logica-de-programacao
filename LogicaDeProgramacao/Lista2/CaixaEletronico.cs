@@ -18,9 +18,9 @@ namespace LogicaDeProgramacao.Lista2
         public bool VerificarResposta()
         {
             return
-                   Validar.SaoIguais(new[] { 00, 00, 00, 02, 00, 00 }, Rodar(40))
-                && Validar.SaoIguais(new[] { 01, 05, 00, 02, 01, 00 }, Rodar(76))
-                && Validar.SaoIguais(new[] { 01, 00, 00, 00, 00, 10 }, Rodar(1001))
+                   Validar.SaoIguais(new[] { 00, 00, 00, 02, 00, 00 }, () => Rodar(40))
+                && Validar.SaoIguais(new[] { 01, 05, 00, 02, 01, 00 }, () => Rodar(76))
+                && Validar.SaoIguais(new[] { 01, 00, 00, 00, 00, 10 }, () => Rodar(1001))
                 ;
         }
 

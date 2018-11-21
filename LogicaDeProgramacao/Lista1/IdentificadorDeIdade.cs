@@ -16,11 +16,11 @@ namespace LogicaDeProgramacao.Lista1
         public bool VerificarResposta()
         {
             return
-                   Validar.SaoIguais("Adulto", Rodar(19))
-                && Validar.SaoIguais("Juvenil", Rodar(18))
-                && Validar.SaoIguais("Infantil", Rodar(10))
-                && Validar.SaoIguais("Infantiil", Rodar(0))
-                && Validar.SaoIguais("Adulto", Rodar(60));
+                   Validar.SaoIguais("Adulto", () => Rodar(19))
+                && Validar.SaoIguais("Juvenil", () => Rodar(18))
+                && Validar.SaoIguais("Infantil", () => Rodar(10))
+                && Validar.SaoIguais("Infantiil", () => Rodar(0))
+                && Validar.SaoIguais("Adulto", () => Rodar(60));
         }
 
         public string Rodar(int idade)

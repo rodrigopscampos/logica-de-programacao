@@ -16,10 +16,10 @@ namespace LogicaDeProgramacao.Lista1
         public bool VerificarResposta()
         {
             return
-                   Validar.SaoIguais(95, Rodar(100))
-                && Validar.SaoIguais(900, Rodar(1000))
-                && Validar.SaoIguais(7650, Rodar(9000))
-                && Validar.SaoIguais(16830, Rodar(20000));
+                   Validar.SaoIguais(95, () => Rodar(100))
+                && Validar.SaoIguais(900, () => Rodar(1000))
+                && Validar.SaoIguais(7650, () => Rodar(9000))
+                && Validar.SaoIguais(16830, () => Rodar(20000));
         }
 
         public decimal Rodar(decimal salarioBruto)

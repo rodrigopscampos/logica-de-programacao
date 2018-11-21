@@ -11,10 +11,10 @@ namespace LogicaDeProgramacao.Lista2
         public bool VerificarResposta()
         {
             return
-                   Validar.SaoIguais(365, Rodar(1, 0, 0))
-                && Validar.SaoIguais(366, Rodar(1, 0, 1))
-                && Validar.SaoIguais(396, Rodar(1, 1, 1))
-                && Validar.SaoIguais(3564, Rodar(9, 9, 9))
+                   Validar.SaoIguais(365, () => Rodar(1, 0, 0))
+                && Validar.SaoIguais(366, () => Rodar(1, 0, 1))
+                && Validar.SaoIguais(396, () => Rodar(1, 1, 1))
+                && Validar.SaoIguais(3564, () => Rodar(9, 9, 9))
                 ;
         }
 

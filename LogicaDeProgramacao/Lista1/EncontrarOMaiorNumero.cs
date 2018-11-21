@@ -11,9 +11,9 @@ namespace LogicaDeProgramacao.Lista1
         public bool VerificarResposta()
         {
             return
-                   Validar.SaoIguais(10, Rodar(1, 3, 2, 10, -10))
-                && Validar.SaoIguais(5, Rodar(4, 3, 2, 2, 5))
-                && Validar.SaoIguais(-100, Rodar(-100, -200, -100, -101, -200))
+                   Validar.SaoIguais(10, () => Rodar(1, 3, 2, 10, -10))
+                && Validar.SaoIguais(5, () => Rodar(4, 3, 2, 2, 5))
+                && Validar.SaoIguais(-100, () => Rodar(-100, -200, -100, -101, -200))
                 ;
         }
 
