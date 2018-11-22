@@ -13,7 +13,7 @@ namespace LogicaDeProgramacao
 
                 if (esperado != atual && !esperado.Equals(atual))
                 {
-                    Console.WriteLine($"Divergencia. Esperado: '{esperado}' Atual: '{atual}'. Cenário: {atualExp}");
+                    Console.WriteLine($"Divergencia!\r\nEsperado: '{esperado}'\r\nAtual: '{atual}'.\r\nCenário: {atualExp}");
                     return false;
                 }
 

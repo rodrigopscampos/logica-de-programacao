@@ -26,7 +26,14 @@ namespace LogicaDeProgramacao
 
                 Console.Clear();
 
-                exercicios[opcaoEscolhida].VerificarResposta();
+                var sucesso = exercicios[opcaoEscolhida].VerificarResposta();
+
+                if(sucesso)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("PARABÉNS, VOCÊ CONSEGUIU !!!");
+                    Console.WriteLine();
+                }
 
                 Console.WriteLine("-----------------------------");
                 Console.WriteLine("Digite 'exit' para sair ou Enter para continuar");
