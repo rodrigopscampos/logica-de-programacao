@@ -41,12 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lista1\CalculadoraDeFatorial.cs" />
+    <Compile Include="Lista1\CalculadoraSomaDeTempos.cs" />
+    <Compile Include="Lista1\ConversorMinutosEmHoras.cs" />
+    <Compile Include="Lista1\EncontrarOMaiorDe3Numeros.cs" />
+    <Compile Include="Lista2\CalculadoraDeFatorial.cs" />
     <Compile Include="Lista1\CalculadoraDePotenciacao.cs" />
     <Compile Include="Lista1\CalculadoraDeSalarioLiquido.cs" />
     <Compile Include="Lista1\CalculadoraDeSomaDe3Numeros.cs" />
     <Compile Include="IExercicio.cs" />
-    <Compile Include="Lista1\EncontrarOMaiorNumero.cs" />
+    <Compile Include="Lista2\EncontrarOMaiorNumeroDe5Numeros.cs" />
     <Compile Include="Lista1\IdentificadorDeIdade.cs" />
     <Compile Include="Lista2\CaixaEletronico.cs" />
     <Compile Include="Lista2\CalculadoraDeIdadeEmDias.cs" />

@@ -16,5 +16,4 @@ namespace LogicaDeProgramacao.Lista1
             throw new NotImplementedException();
         }
     }
-
 }

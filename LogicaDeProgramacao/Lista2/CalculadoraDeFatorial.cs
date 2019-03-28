@@ -1,6 +1,6 @@
 using System;
 
-namespace LogicaDeProgramacao.Lista1
+namespace LogicaDeProgramacao.Lista2
 {
 
     public class CalculadoraDeFatorial : IExercicio

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace LogicaDeProgramacao.Lista1
+namespace LogicaDeProgramacao.Lista2
 {
-    public class EncontrarOMaiorNumero : IExercicio
+    public class EncontrarOMaiorNumeroDe5Numeros : IExercicio
     {
         /*
             Deve encontrar o maior dos 5 números  (a, b, c, d, e)
