@@ -5,19 +5,19 @@ namespace LogicaDeProgramacao
 {
     public static class Validar
     {
-        public static bool SaoIguais(object esperado, Expression<Func<object>> atualExp)
+        public static bool SaoIguais<T>(T esperado, Expression<Func<T>> atualExp)
         {
             try
             {
                 var atual = atualExp.Compile().Invoke();
 
-                if (esperado != atual && !esperado.Equals(atual))
+                if (esperado.Equals(atual))
                 {
-                    Console.WriteLine($"Divergencia!\r\nEsperado: '{esperado}'\r\nAtual: '{atual}'.\r\nCenário: {atualExp}");
-                    return false;
+                    return true;
                 }
 
-                return true;
+                Console.WriteLine($"Divergencia!\r\nEsperado: '{esperado}'\r\nAtual: '{atual}'.\r\nCenário: {atualExp}");
+                return false;
             }
             catch (Exception ex)
             {
@@ -57,7 +57,7 @@ namespace LogicaDeProgramacao
 
                 return true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine($"Ocorreu uma exceção:\r\n{ex}\r\nCenário: {atualExp}");
                 return false;
