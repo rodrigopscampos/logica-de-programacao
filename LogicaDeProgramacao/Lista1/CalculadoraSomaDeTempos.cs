@@ -9,7 +9,9 @@ namespace LogicaDeProgramacao.Lista1
     public class CalculadoraSomaDeTempos : IExercicio
     {
         private static Tuple<int, int, int> T(int a, int b, int c)
-            => new Tuple<int, int, int>(a, b, c);
+        {
+            return new Tuple<int, int, int>(a, b, c);
+        }
 
         public bool VerificarResposta()
         {

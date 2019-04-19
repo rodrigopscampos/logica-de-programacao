@@ -16,12 +16,12 @@ namespace LogicaDeProgramacao
                     return true;
                 }
 
-                Console.WriteLine($"Divergencia!\r\nEsperado: '{esperado}'\r\nAtual: '{atual}'.\r\nCenário: {atualExp}");
+                Console.WriteLine("Divergencia!\r\nEsperado: " + esperado + "\r\nAtual: " + atual + ".\r\nCenário: " + atualExp);
                 return false;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ocorreu uma exceção:\r\n{ex}\r\nCenário: {atualExp}");
+                Console.WriteLine("Ocorreu uma exceção:\r\n" + ex + "\r\nCenário: " + atualExp);
                 return false;
             }
         }
@@ -34,10 +34,10 @@ namespace LogicaDeProgramacao
 
                 if (esperado.Length != atual.Length)
                 {
-                    Console.WriteLine($"Divergencia. Tamanho diferente entre as coleções:");
-                    Console.WriteLine($"Esperado: {string.Join(", ", esperado)}");
-                    Console.WriteLine($"Atual   : {string.Join(", ", atual)}");
-                    Console.WriteLine($"Cenário: {atualExp}");
+                    Console.WriteLine("Divergencia. Tamanho diferente entre as coleções:");
+                    Console.WriteLine("Esperado: " + string.Join(", ", esperado));
+                    Console.WriteLine("Atual   : " + string.Join(", ", atual));
+                    Console.WriteLine("Cenário: " + atualExp);
 
                     return false;
                 }
@@ -46,10 +46,10 @@ namespace LogicaDeProgramacao
                 {
                     if (!esperado[i].Equals(atual[i]))
                     {
-                        Console.WriteLine($"Divergencia. As coleções estão diferentes:");
-                        Console.WriteLine($"Esperado: {string.Join(", ", esperado)}");
-                        Console.WriteLine($"Atual   : {string.Join(", ", atual)}");
-                        Console.WriteLine($"Cenário: {atualExp}");
+                        Console.WriteLine("Divergencia. As coleções estão diferentes:");
+                        Console.WriteLine("Esperado: " + string.Join(", ", esperado));
+                        Console.WriteLine("Atual   : " + string.Join(", ", atual));
+                        Console.WriteLine("Cenário: " + atualExp);
 
                         return false;
                     }
@@ -59,7 +59,7 @@ namespace LogicaDeProgramacao
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ocorreu uma exceção:\r\n{ex}\r\nCenário: {atualExp}");
+                Console.WriteLine("Ocorreu uma exceção:\r\n" + ex + "\r\nCenário: " + atualExp);
                 return false;
             }
         }
