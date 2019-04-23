@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Lista1\CalculadoraSomaDeTempos.cs" />
+    <Compile Include="Lista1\CapacidadeDoElevador.cs" />
     <Compile Include="Lista1\ConversorMinutosEmHoras.cs" />
     <Compile Include="Lista1\EncontrarOMaiorDe3Numeros.cs" />
     <Compile Include="Lista2\CalculadoraDeFatorial.cs" />
