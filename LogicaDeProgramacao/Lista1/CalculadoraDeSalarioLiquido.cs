@@ -24,7 +24,29 @@ namespace LogicaDeProgramacao.Lista1
 
         public decimal Rodar(decimal salarioBruto)
         {
-            throw new NotImplementedException();
+            decimal imposto;
+            if (salarioBruto < 300M)
+            {
+                imposto = 0.05M;
+            }
+            else if (salarioBruto <= 1200M)
+            {
+                imposto = 0.10M;
+            }
+            else
+            {
+                imposto = 0.15M;
+            }
+
+            salarioBruto *= (1M - imposto);
+
+            decimal taxas = 0;
+            if (salarioBruto > 10000M)
+            {
+                taxas = salarioBruto * 0.01M;
+            }
+
+            return salarioBruto - taxas;
         }
     }
 }

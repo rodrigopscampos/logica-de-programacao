@@ -13,9 +13,9 @@ namespace LogicaDeProgramacao.Lista1
                 ;
         }
 
-        public int Rodar(int @base, int potencia)
+        public int Rodar(int num, int potencia)
         {
-            throw new NotImplementedException();
+            return (int) Math.Pow(num, potencia);
         }
     }
 }

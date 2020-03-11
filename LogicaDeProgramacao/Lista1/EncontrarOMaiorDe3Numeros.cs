@@ -23,7 +23,16 @@ namespace LogicaDeProgramacao.Lista1
 
         public int Rodar(int a, int b, int c)
         {
-            throw new NotImplementedException();
+            int maior = a;
+            if (b > maior)
+            {
+                maior = b;
+            }
+            if (c > maior)
+            {
+                maior = c;
+            }
+            return maior;
         }
     }
 }

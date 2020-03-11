@@ -59,16 +59,27 @@ namespace LogicaDeProgramacao.Lista1
             int entradaHora1, int entradaMinuto1, int entradaSegundo1,
             int entradaHora2, int entradaMinuto2, int entradaSegundo2)
         {
-            int saidaHora = 0;
-            int saidaMinuto = 0;
-            int saidaSegundo = 0;
+            int chegada = getHourInSec(entradaHora1) + getMinInSec(entradaMinuto1) + entradaSegundo1;
+            int saida = getHourInSec(entradaHora2) + getMinInSec(entradaMinuto2) + entradaSegundo2;
 
-            //apague este comentário e implemente a algoritmo aqui.
-            //você deve preencher as variáveis saidaHora, saidaMinuto e saidaSegundo com os valores corretos
+            int total = (chegada + saida);
 
+            int saidaSegundo = total % 60;
+            int saidaMinuto = total /60 % 60;
+            int saidaHora = total / 60 / 60 % 60;
 
             //não remover esta linha
             return new Tuple<int, int, int>(saidaHora, saidaMinuto, saidaSegundo);
+        }
+
+        private int getHourInSec(int hora)
+        {
+            return hora * 60 * 60;
+        }
+
+        private int getMinInSec(int minutos)
+        {
+            return minutos * 60;
         }
     }
 }
