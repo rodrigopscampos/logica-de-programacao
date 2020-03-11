@@ -59,9 +59,18 @@ namespace LogicaDeProgramacao.Lista1
             int entradaHora1, int entradaMinuto1, int entradaSegundo1,
             int entradaHora2, int entradaMinuto2, int entradaSegundo2)
         {
-            int saidaHora = 0;
-            int saidaMinuto = 0;
-            int saidaSegundo = 0;
+            int saidaHora = entradaHora1+entradaHora2;
+            int saidaMinuto = entradaMinuto1+entradaMinuto2;
+            int saidaSegundo = entradaSegundo1+entradaSegundo2;
+
+            while(saidaSegundo >= 60){
+                saidaSegundo -= 60;
+                saidaMinuto++;
+            }
+            while(saidaMinuto >= 60){
+                saidaMinuto -= 60;
+                saidaHora++;
+            }
 
             //apague este comentário e implemente a algoritmo aqui.
             //você deve preencher as variáveis saidaHora, saidaMinuto e saidaSegundo com os valores corretos

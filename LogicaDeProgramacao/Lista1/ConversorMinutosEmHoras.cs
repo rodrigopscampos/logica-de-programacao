@@ -19,7 +19,7 @@ namespace LogicaDeProgramacao.Lista1
 
         public double Rodar(int minutos)
         {
-            throw new NotImplementedException();
+            return (double)minutos / 60;
         }
     }
 }

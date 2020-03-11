@@ -15,7 +15,15 @@ namespace LogicaDeProgramacao.Lista2
 
         public int[] Rodar(int c1, int c2, int c3, int c4)
         {
-            throw new NotImplementedException();
+            double maximo = (double) c1+c2+c3+c4;
+            int[] resultado = new int[4];
+
+            resultado[0] =  Convert.ToInt32((100/maximo)*c1);
+            resultado[1] =  Convert.ToInt32((100/maximo)*c2);
+            resultado[2] =  Convert.ToInt32((100/maximo)*c3);
+            resultado[3] =  Convert.ToInt32((100/maximo)*c4);
+
+            return resultado;
         }
     }
 }

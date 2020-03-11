@@ -23,7 +23,7 @@ namespace LogicaDeProgramacao.Lista1
 
         public int Rodar(int a, int b, int c)
         {
-            throw new NotImplementedException();
+            return (Math.Max(Math.Max(a, b), c));
         }
     }
 }

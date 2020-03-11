@@ -26,7 +26,16 @@ namespace LogicaDeProgramacao.Lista1
 
         public string Rodar(int idade)
         {
-            throw new NotImplementedException();
+            if(idade <= 10){
+                return "Infantil";
+            }else if(idade >= 11 && idade <= 15){
+                return "Infanto";
+            }else if(idade >= 16 && idade <= 18){
+                return "Juvenil";
+            }else if(idade > 18){
+                return "Adulto";
+            }
+            return null;
         }
     }
 }

@@ -15,7 +15,7 @@ namespace LogicaDeProgramacao.Lista1
 
         public int Rodar(int a, int b, int c)
         {
-            throw new NotImplementedException();
+            return a+b+c;
         }
     }
 
