@@ -28,7 +28,7 @@ namespace LogicaDeProgramacao.Lista1
 
         public int Rodar(int c, int p)
         {
-            throw new NotImplementedException();
+            return (int)Math.Round((double)(c/p));
         }
     }
 }

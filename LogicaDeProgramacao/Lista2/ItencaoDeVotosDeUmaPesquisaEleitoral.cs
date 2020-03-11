@@ -15,7 +15,14 @@ namespace LogicaDeProgramacao.Lista2
 
         public int[] Rodar(int c1, int c2, int c3, int c4)
         {
-            throw new NotImplementedException();
+            int total = c1 + c2 + c3 + c4;
+
+            return new[] {
+                c1 * 100 / total,
+                c2 * 100 / total,
+                c3 * 100 / total,
+                c4 * 100 / total
+            };
         }
     }
 }

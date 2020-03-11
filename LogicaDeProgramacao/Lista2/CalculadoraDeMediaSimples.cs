@@ -8,13 +8,18 @@ namespace LogicaDeProgramacao.Lista2
         {
             return
                   Validar.SaoIguais(2, () => Rodar(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2))
-               && Validar.SaoIguais(6, () => Rodar(10, 3, 0, -1))
+               && Validar.SaoIguais(3, () => Rodar(10, 3, 0, -1))
                ;
         }
 
         public int Rodar(params int[] numeros)
         {
-            throw new NotImplementedException();
+            int total = 0;
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                total += numeros[i];
+            }
+            return total / numeros.Length;
         }
     }
 }

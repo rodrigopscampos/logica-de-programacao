@@ -17,7 +17,20 @@ namespace LogicaDeProgramacao.Lista2
 
         public bool Rodar(int n)
         {
-            throw new NotImplementedException();
+            return Primo(n);
+        }
+
+        private bool Primo(double x)
+        {
+            for (int i = 2; i < x; i++)
+            {
+                //Se o resto da divisão for zero, o número é divisivel por i portanto não é primo.
+                if (x % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

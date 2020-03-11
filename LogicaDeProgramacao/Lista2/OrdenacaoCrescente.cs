@@ -13,9 +13,10 @@ namespace LogicaDeProgramacao.Lista2
                 ;
         }
 
-        public int[] Rodar(params int[] array)
+        public int[] Rodar(params int[] list)
         {
-            throw new NotImplementedException();
+            Array.Sort(list);
+            return list;
         }
     }
 }

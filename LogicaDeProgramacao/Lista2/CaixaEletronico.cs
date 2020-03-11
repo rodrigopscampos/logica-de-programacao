@@ -19,14 +19,52 @@ namespace LogicaDeProgramacao.Lista2
         {
             return
                    Validar.SaoIguais(new[] { 00, 00, 00, 02, 00, 00 }, () => Rodar(40))
-                && Validar.SaoIguais(new[] { 01, 05, 00, 02, 01, 00 }, () => Rodar(76))
-                && Validar.SaoIguais(new[] { 01, 00, 00, 00, 00, 10 }, () => Rodar(1001))
+                && Validar.SaoIguais(new[] { 03, 00, 00, 01, 01, 00 }, () => Rodar(76))
+                && Validar.SaoIguais(new[] { 03, 01, 00, 02, 01, 09 }, () => Rodar(1001))
                 ;
         }
 
         public int[] Rodar(int valor)
         {
-            throw new NotImplementedException();
+            int notas100 = QuantidadeNotas(valor, 100);
+            valor -= notas100 * 100;
+
+            int notas50 = QuantidadeNotas(valor, 50);
+            valor -= notas50 * 50;
+
+            int notas20 = QuantidadeNotas(valor, 20);
+            valor -= notas20 * 20;
+
+            int notas10 = QuantidadeNotas(valor, 10);
+            valor -= notas10 * 10;
+
+            int notas5 = QuantidadeNotas(valor, 5);
+            valor -= notas5 * 5;
+
+            int notas2 = QuantidadeNotas(valor, 2);
+
+            return new[] { notas2, notas5, notas10, notas20, notas50, notas100 };
+        }
+        
+        private int QuantidadeNotas(int valor, int valorNota)
+        {
+            try
+            {
+                if (valor == 0)
+                {
+                    return 0;
+                }
+                int notas = valor / valorNota;
+                // Como não existem notas de 1 real, o resto nunca pode ser 1;
+                if ((valor % (notas * valorNota)) == 1)
+                {
+                    notas -= 1;
+                }
+                return notas;
+            } catch (Exception)
+            {
+                return 0;
+            }
         }
     }
 }
