@@ -1,70 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{05444187-9650-43FC-965A-4B1281291BC7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LogicaDeProgramacao</RootNamespace>
-    <AssemblyName>LogicaDeProgramacao</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Lista1\CalculadoraSomaDeTempos.cs" />
-    <Compile Include="Lista1\CapacidadeDoElevador.cs" />
-    <Compile Include="Lista1\ConversorMinutosEmHoras.cs" />
-    <Compile Include="Lista1\EncontrarOMaiorDe3Numeros.cs" />
-    <Compile Include="Lista2\CalculadoraDeFatorial.cs" />
-    <Compile Include="Lista1\CalculadoraDePotenciacao.cs" />
-    <Compile Include="Lista1\CalculadoraDeSalarioLiquido.cs" />
-    <Compile Include="Lista1\CalculadoraDeSomaDe3Numeros.cs" />
-    <Compile Include="IExercicio.cs" />
-    <Compile Include="Lista2\EncontrarOMaiorNumeroDe5Numeros.cs" />
-    <Compile Include="Lista1\IdentificadorDeIdade.cs" />
-    <Compile Include="Lista2\CaixaEletronico.cs" />
-    <Compile Include="Lista2\CalculadoraDeIdadeEmDias.cs" />
-    <Compile Include="Lista2\CalculadoraDeMediaSimples.cs" />
-    <Compile Include="Lista2\ItencaoDeVotosDeUmaPesquisaEleitoral.cs" />
-    <Compile Include="Lista2\OrdenacaoCrescente.cs" />
-    <Compile Include="Lista2\ValidarSeONumeroEPrimo.cs" />
-    <Compile Include="Validar.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>

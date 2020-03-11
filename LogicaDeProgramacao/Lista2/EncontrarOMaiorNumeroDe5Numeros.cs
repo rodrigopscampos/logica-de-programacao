@@ -19,7 +19,7 @@ namespace LogicaDeProgramacao.Lista2
 
         public int Rodar(int a, int b, int c, int d, int e)
         {
-            throw new NotImplementedException();
+            return Math.Max(Math.Max(Math.Max(Math.Max(a,b),c),d),e);
         }
     }
 }

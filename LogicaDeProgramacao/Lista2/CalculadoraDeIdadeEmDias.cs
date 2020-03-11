@@ -20,7 +20,11 @@ namespace LogicaDeProgramacao.Lista2
 
         public int Rodar(int anos, int meses, int dias)
         {
-            throw new NotImplementedException();
+            int diasConvertidos = 0;
+            diasConvertidos += anos*365;
+            diasConvertidos += meses*30;
+            diasConvertidos += dias;
+            return diasConvertidos;
         }
     }
 }

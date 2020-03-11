@@ -17,7 +17,15 @@ namespace LogicaDeProgramacao.Lista2
 
         public bool Rodar(int n)
         {
-            throw new NotImplementedException();
+            bool resultado = true;
+            for(int i = 2; i <= n/2; i++){
+
+                    if(n % i == 0){
+                        resultado = false;
+                    }
+
+            }
+            return resultado;
         }
     }
 }

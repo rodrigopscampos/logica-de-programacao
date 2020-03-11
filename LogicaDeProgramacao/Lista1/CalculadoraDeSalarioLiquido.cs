@@ -24,7 +24,17 @@ namespace LogicaDeProgramacao.Lista1
 
         public decimal Rodar(decimal salarioBruto)
         {
-            throw new NotImplementedException();
+
+            if(salarioBruto < 300){
+                return salarioBruto -(salarioBruto*5)/100;
+            }else if(salarioBruto < 1200 && salarioBruto >= 300){
+                return salarioBruto - (salarioBruto*10)/100;
+            }else if(salarioBruto >= 1200 && salarioBruto <= 10000){
+                return salarioBruto - (salarioBruto*15)/100;
+            }else if(salarioBruto >= 10000){
+                return salarioBruto - ((salarioBruto*15)/100) - (salarioBruto - (salarioBruto*15)/100)/100;
+            }
+            return 0;
         }
     }
 }

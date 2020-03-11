@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Linq;
 namespace LogicaDeProgramacao.Lista2
 {
     public class OrdenacaoCrescente : IExercicio
@@ -15,7 +15,7 @@ namespace LogicaDeProgramacao.Lista2
 
         public int[] Rodar(params int[] array)
         {
-            throw new NotImplementedException();
+            return array.OrderBy(p => p).ToArray();
         }
     }
 }

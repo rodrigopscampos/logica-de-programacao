@@ -26,9 +26,9 @@ namespace LogicaDeProgramacao.Lista1
                && Validar.SaoIguais(0, () => Rodar(0, 1));
         }
 
-        public int Rodar(int c, int p)
+        public int Rodar(decimal c, decimal p)
         {
-            throw new NotImplementedException();
+            return (int)Math.Floor(c/p);
         }
     }
 }
