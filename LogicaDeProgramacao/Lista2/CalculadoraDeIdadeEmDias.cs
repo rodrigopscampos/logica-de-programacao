@@ -20,7 +20,7 @@ namespace LogicaDeProgramacao.Lista2
 
         public int Rodar(int anos, int meses, int dias)
         {
-            throw new NotImplementedException();
+            return anos * 365 + meses * 30 + dias;
         }
     }
 }
